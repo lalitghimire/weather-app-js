@@ -26,7 +26,7 @@ fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
 
 //function for displaying data in the html 
 function displayResults(weather) {
-    console.log(weather);
+    //console.log(weather);
     let city = document.querySelector('.place .city');
     city.innerText = `${weather.name}, ${weather.sys.country}`; 
 
