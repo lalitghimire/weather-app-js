@@ -24,7 +24,7 @@ fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
 }
 
 
-//function for displaying data in the html 
+//function for displaying data in the html
 function displayResults(weather) {
     //console.log(weather);
     let city = document.querySelector('.place .city');
@@ -35,7 +35,7 @@ function displayResults(weather) {
     date.innerText = dateBuilder(now);
 
     let temp = document.querySelector('.present .temp');
-    temp.innerHTML = `${Math.round(weather.main.temp)} <span>°C</span>`;
+    temp.innerHTML = `${Math.round(weather.main.temp)}<span>°C</span>`;
 
     let weather_el = document.querySelector('.present .weather');
     weather_el.innerText = weather.weather[0].main;
